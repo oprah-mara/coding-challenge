@@ -1,0 +1,43 @@
+:root{
+    /* font family */
+    --poppins: "poppins", sans-serif;
+
+    /* colors */
+    --primary-color: ;
+    --dark-color: ;
+    --accent-colors: ;
+    --light-colors: ;
+    --secondary-colors: ;
+    --border-bottom-color: #CE2927;
+   
+}
+*,
+*::before,
+*::after{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+
+.nav-container{
+    border: 1px solid red;
+    width: 100%;  
+    display: flex;
+    justify-content: space-between;
+
+}
+.nav-container p{
+    border: 1px solid red;
+    /* text-align: center; */
+}
+.nav-container ul{
+   display: none;
+    
+}
+.nav_container-li{
+    
+}
+

@@ -20,14 +20,17 @@
 }
 body{
     font-family: var(--poppins);
+    background-color: var(--primary-color);
+   
 }
 img{
     width: 100%;
-    max-width: 3em;
+   
 }
 i{
     font-size: clamp(1.2rem, 1.375rem + 2vw, 2rem);
     cursor: pointer;
+    max-width: 100%;
 }
 ul{
     list-style-type: none;
@@ -36,41 +39,81 @@ a{
     text-decoration: none;
     color: black;
 }
-.nav-container{
+.container-medium{
     width: 100%;
-    
 }
+
 .nav-container{
-    border: 1px solid red;
-    width: 100%;  
+    background-color: var(--primary-color);
+    width: 94%; 
+    margin-inline: auto; 
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
+    padding-block: 1.2rem;
+    position: sticky;
 }
 .nav-container p{
    font-family: 'Courier New', Courier, monospace;
-   font-weight: 600;
-   font-size: clamp(1.2rem, 1.375rem + 2vw, 2rem);
+   font-weight: 800;
+   font-size: clamp(2rem, 1.375rem + 2vw, 2.5rem);
 }
 .nav-container ul{
    display: none;
+}
+.nav-container img{
+     max-width: 3rem;
+}
+
+
+ /* this is hero section */
+
+ .Hero-section{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    /* margin: 1rem; */
+    /* width: 94%; */
+
+ }
+ .Hero-section img{
+    max-width: 100%;
+ }
+ .Hero-section_heading{
+
+ }
+ .Hero-section_heading > h1{
+    font-size: clamp(2rem, 1.375rem + 2vw, 2.5rem);
+ }
+.Hero-section_heading > p{
+    padding-block: 1rem;
+    margin-inline: 1.5rem;
+    font-size: clamp(0.5rem, 1.375rem + 2vw, 1rem);;
+    
 }
 
 
 
 @media(width >= 768px){
-    .nav-container ul{
+    .nav-container > ul{
         display: flex;
-        gap: 3rem;
+        gap: 4rem;
         font-size: 1.2rem;
         font-weight: 500;
-        margin-inline: 2rem;
-        /* border: 2px solid red; */ 
-        
+        padding-block: 0.5rem;
+        max-width: 100%;
     } 
-    .nav-container ul li a:hover{
+    .nav-container > ul li a:hover{
         border-bottom: 2px solid var(--border-bottom-color);
     }
-   
+    .fa-bars{
+        display: none;
+    }
+    .Hero-section {
+        flex-direction: row;
+    }
+    .Hero-section > img{
+        max-width: 50%;
+    }
+    
       
 }
